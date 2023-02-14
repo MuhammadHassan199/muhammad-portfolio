@@ -11,10 +11,6 @@ const Home = () => {
         <p>Welcome to my portfolio world! You can see my work and <br></br> if you want me to hire me download my CV below.</p>
         <DownloadCV />
         </div>
-                
-        
-    
-        
     </div>
 )
 }
