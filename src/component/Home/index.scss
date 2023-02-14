@@ -1,93 +1,52 @@
-// .back-img{
-//     position: absolute;
-//     bottom: 0;
-//     left: 40%;
-//     transform: translateX(-50%);
-//     display: flex;
-    
-//     }
-// .img{
-//     width: 1200px;
-//     height: 100%;
+h1{
+  font-family: 'Coolvetica';
+  font-weight: 700;
+  margin: 0;
+  font-size: 150px;
+  color: #fd7171;
+}
+
+h2{
+  font-family: 'Coolvetica';
+  font-weight: 300;
+  margin: 0;
+  font-size: 110px;
+  color: #4d2323;
+}
+
+p{
+  font-family: 'poppins';
+  font-weight: 200;
+  font-size: 20px;
+}
+
+// .text-zone{
+//   margin: 100px;
 // }
 
-
-
-.text-forhome{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    font-family: "poppins";
-
-margin-right: 20px;
-color: #c9c9c9;
-line-height: 50px;
-}
-    
-@keyframes zoomin {
-    from {
-      transform: scale(1);
-    }
-    to {
-      transform: scale(1.5);
-    }
-  }
+img{
+  width: 100vh;
+  height: auto;
+  /* margin: 104px 192px 0; */
+  // margin-right: 80px;
   
-  @keyframes fillcolor {
-    from {
-      color: #cdcdcd;
-    }
-    to {
-      color: #fd7171;
-    }
-  }
-  
-  h1 {
-    animation: zoomin 1s ease-in-out forwards, fillcolor 1s ease-in-out forwards;
-    font-family: "Satisfy";
-    position: relative;
-    
-    
-    
-  }
-  h2{
-    font-family: "poppins";
-    position: relative;
-    right: 165px;
-    font-weight: 100;
-
-    
-  }
-  h2:hover{
-    color: #fd7171;
-  }
-
-
-  p{
-  font-family: poppins;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  position: relative;
-  right: 155px;
-  top: -0px;
-  color: #8f8f8f;
 }
+
+
 
 .DownloadCV{
     border-radius: 50px;
     width: 150px;
     height: 70px;
     position: relative;
-    right: 155px;
+    // right: 155px;
     color: #fd7171;
     background-color: transparent;
     font-size: 16px;
     font-family: 'poppins';
     border-color: #fd7171;
     border-width: 3px;
+    margin: 0;
     
 }
 
@@ -96,78 +55,3 @@ line-height: 50px;
   border: transparent;
   color: #ffffff;
 }
-
-.img-forhome{
-
-  position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// h1 {
-//     font-size: 120px;
-//     transition: font-size 1s ease-in-out;
-//     color: #cdcdcd;
-//   }
-  
-//   h1:hover {
-//     color: #ec4035;
-//     font-size: 150px;
-//   }
-
-// h2 {
-//     font-size: 80px;
-//     transition: font-size 1s ease-in-out;
-//     color: #cdcdcd;
-//   }
-  
-//   h2:hover {
-//     font-size: 90px;
-//     color: #ec4035;
-//   }
