@@ -20,13 +20,32 @@ p{
   font-size: 20px;
 }
 
-// .text-zone{
+.text-zone{
 //   margin: 100px;
-// }
+animation: fadeIn 2s ease-in ;
+}
 
-img{
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+img{ 
+
+  
   width: 100vh;
   height: auto;
+  animation: slide 2s ease-in-out ;
+
   /* margin: 104px 192px 0; */
   // margin-right: 80px;
   
