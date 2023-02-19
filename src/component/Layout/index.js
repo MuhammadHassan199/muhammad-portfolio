@@ -1,6 +1,6 @@
 import './index.scss'
 import Sidebar from '../Sidebar'
-import Home from '../Home'
+// import Home from '../Home'
 
 
 
@@ -8,7 +8,8 @@ import Home from '../Home'
 const Layout = () => {
     return <>
     <Sidebar />
-    <Home />
+    {/* <Home /> */}
+    
 
         
     </>

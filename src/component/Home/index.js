@@ -1,6 +1,7 @@
 import DownloadCV from '../..';
 import Portrait from '../../assets/images/potrait.png';
 import '../Home/index.scss'
+import '../../App.js'
 const Home = () => {
     return(
     <div className='container home-page'>
