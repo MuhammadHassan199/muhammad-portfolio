@@ -5,7 +5,7 @@ import '../Home/index.scss'
 const Home = () => {
     return(
     <div className='container home-page'>
-        <img src={Portrait} alt=''></img>
+        <img className='home-img' src={Portrait} alt=''></img>
         <div className='text-zone'>
         <h1>Hi,</h1>
         <h2>Hassan Here!</h2>

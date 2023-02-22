@@ -1,9 +1,7 @@
-import React from 'react';
-import '../../component/About/index.scss';
+import '../About/index.scss';
 
 const About = () => {
-  console.log('About component rendered');
-  return (
+    return (
     <>
       <h1>About Page</h1>
     </>

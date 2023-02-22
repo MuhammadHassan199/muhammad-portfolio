@@ -5,14 +5,14 @@ import Home from '../Home'
 
 
 
-
-
 const Layout = () => {
-    return <>
+    return ( 
+    <div className='App'>
     <Home />
     {/* <About /> */}
     <Sidebar />
-    </>
+    </div>
+    )
 }
 
 export default Layout
