@@ -1,16 +1,14 @@
 import './index.scss'
 import Sidebar from '../Sidebar'
-import Home from '../Home'
-// import About from '../About'
+import { Outlet } from 'react-router-dom'
 
 
 
 const Layout = () => {
     return ( 
     <div className='App'>
-    <Home />
-    {/* <About /> */}
     <Sidebar />
+    <Outlet />
     </div>
     )
 }
