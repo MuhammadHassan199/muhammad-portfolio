@@ -1,15 +1,43 @@
+import { useEffect, useState } from 'react';
 import DownloadCV from '../..';
-import Portrait from '../../assets/images/potrait.png';
+import Portrait from '../../assets/images/logo-s.png';
 import '../Home/index.scss'
+import AnimatedLetters from '../AnimatedLetters';
 
 const Home = () => {
+    const [letterClass, setLetterClass] = useState('text-animate')
+    const nameArray = ['H',
+    'a',
+    's',
+    's',
+    'a',
+    'n',
+    ' ',
+    'H',
+    'e',
+    'r',
+    'e',
+    '!']
+
+    useEffect(() =>{
+        setTimeout(() => {
+          setLetterClass('text-animate-hover')
+        }, 4000);
+    }, []);
+    
+
     return(
     <div className='container home-page'>
-        <img className='home-img' src={Portrait} alt=''></img>
+        {/* <img className='home-img' src={Portrait} alt=''/> */}
         <div className='text-zone'>
-        <h1>Hi,</h1>
-        <h2>Hassan Here!</h2>
-        <p>Welcome to my portfolio world! You can see my work and <br></br> if you want me to hire me download my CV below.</p>
+            <h1 className='hi-heading'>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _14`}>i,</span> <br />      
+            <AnimatedLetters letterClass={letterClass}
+            strArray={nameArray}
+            idx={15}/>
+        </h1>
+        <h2>Welcome to my portfolio world! You can see my work and <br></br> if you want me to hire me download my CV below.</h2>
         <DownloadCV />
         </div>
     </div>

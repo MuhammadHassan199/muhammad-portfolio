@@ -1,29 +1,31 @@
-h1{
-  font-family: 'Coolvetica';
-  font-weight: 700;
-  margin: 0;
-  font-size: 150px;
-  color: #fd7171;
+.home-page{
+  .text-zone{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    max-height: 90%;
+  }
+  
+  
+  h1{
+    color: #fd7171;
+    font-size: 110px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
 }
 
 h2{
-  font-family: 'Coolvetica';
-  font-weight: 300;
-  margin: 0;
-  font-size: 110px;
-  color: #4d2323;
-}
-
-p{
-  font-family: 'poppins';
-  font-weight: 200;
+  color: #414141;
+  margin-top: 20px;
+  font-weight: lighter;
   font-size: 20px;
-  color: #7c7c7c;
-}
-
-.text-zone{
-//   margin: 100px;
-animation: fadeIn 2s ease-in ;
+  font-family: 'poppins';
+  letter-spacing: 2px;
 }
 
 
@@ -43,7 +45,7 @@ animation: fadeIn 2s ease-in ;
 .home-img{ 
 
   
-  width: 100vh;
+  width: 70vh;
   height: auto;
   animation: slide 2s ease-in-out ;
 
@@ -52,27 +54,24 @@ animation: fadeIn 2s ease-in ;
  
 }
 
-
-
-
 .DownloadCV{
-    border-radius: 50px;
-    width: 150px;
-    height: 70px;
-    position: relative;
-    // right: 155px;
-    color: #fd7171;
-    background-color: transparent;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 4px;
     font-family: 'poppins';
-    border-color: #fd7171;
-    border-width: 3px;
-    margin: 0;
-    
+    text-decoration: none;
+    padding: 10px 18px;
+    border:2px solid #fd7171;
+    margin-top: 25px;
+    float: left;
+    // animation: fadeIn 1s 1.8s backwards;
+    background: transparent;
+       
 }
 
 .DownloadCV:hover{
   background-color: #fd7171;
-  border: transparent;
+  // border: transparent;
   color: #ffffff;
 }
