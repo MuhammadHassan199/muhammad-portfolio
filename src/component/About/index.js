@@ -1,6 +1,12 @@
 import '../About/index.scss';
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react';
+import illustrator from '../../assets/images/illustrator.png'
+import photoshop from '../../assets/images/photoshop.png'
+import figma from '../../assets/images/figma.png'
+import html5 from '../../assets/images/html-5.png'
+import css3 from '../../assets/images/css-3.png'
+import react from '../../assets/images/atom.png'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -30,8 +36,28 @@ const About = () => {
         <p>I'm quiet confident, naturally curious, and perpetually working on
         improving my chops one design problem at a time.</p>
       </div>
-
-      
+        <div className='stage-cube-cont'>
+          <div className='cubespinner'>
+            <div className='face1'>
+                <img src={illustrator} alt='icon1' />
+            </div>
+            <div className='face2'>
+                <img src={photoshop} alt='icon2' />
+            </div>
+            <div className='face3'>
+                <img src={figma} alt='icon3' />
+            </div>
+            <div className='face4'>
+                <img src={html5} alt='icon4' />
+            </div>
+            <div className='face5'>
+                <img src={css3} alt='icon5' />
+            </div>
+            <div className='face6'>
+                <img src={react} alt='icon6' />
+            </div>
+          </div>
+        </div>
     </div>
   );
 };
