@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import DownloadCV from '../..';
-import Portrait from '../../assets/images/logo-s.png';
 import '../Home/index.scss'
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from './Logo'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -40,6 +40,7 @@ const Home = () => {
         <h2>Welcome to my portfolio world! You can see my work and <br></br> if you want me to hire me download my CV below.</h2>
         <DownloadCV />
         </div>
+        <Logo />
     </div>
 )
 }
