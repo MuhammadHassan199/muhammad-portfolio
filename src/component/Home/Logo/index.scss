@@ -3,7 +3,7 @@
     width: 400px;
     height: auto;
     position: absolute;
-    top: 0;
+    top: 10%;
     right: 15%;
     bottom: 0;
     left: auto;
@@ -19,9 +19,11 @@
         width: 60vh;
         height: auto;
         z-index: 1;
-        animation: bounceIn;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-fill-mode: forwards;
+        animation-name: bounceIn;
+        animation-timing-function: ease-out;
+        animation-duration: 7s;
+        
+        
+        
     }
 }

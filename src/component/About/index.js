@@ -1,6 +1,7 @@
 import '../About/index.scss';
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react';
+import Loader from 'react-loaders'
 import illustrator from '../../assets/images/illustrator.png'
 import photoshop from '../../assets/images/photoshop.png'
 import figma from '../../assets/images/figma.png'
@@ -18,6 +19,7 @@ const About = () => {
   }, []);
 
     return (
+      <>
     <div className='container about-page'>
       <div className='text-zone'>
         <h1>
@@ -59,6 +61,8 @@ const About = () => {
           </div>
         </div>
     </div>
+    <Loader type="pacman" />
+    </>
   );
 };
 
