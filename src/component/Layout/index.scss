@@ -14,17 +14,8 @@
     animation-delay: 0.8s;
 }
 
-.about-page{
-    .text-zone{
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 35%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
-
+.about-page,
+.contact-page {
         h1{
             font-size: 110px;
             font-family: 'Coolvetica';
@@ -34,12 +25,10 @@
             position: relative;
             margin-bottom: 40px;
             left: 10px;
-
-
-            
         }
+
         p{
-            font-size: 22px;
+            font-size: 18px;
             color: #646464;
             font-family: 'poppins';
             font-weight: 300;
@@ -55,8 +44,17 @@
             &:nth-of-type(3) {
                 animation-delay: 1.9s;
             }
-
         }
+ .text-zone{
+                position: absolute;
+                left: 10%;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 35%;
+                vertical-align: middle;
+                display: table-cell;
+                max-height: 90%;
+                font-family: "poppins";
         
     }
     .text-animate-hover{
