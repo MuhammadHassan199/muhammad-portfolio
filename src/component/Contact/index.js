@@ -6,32 +6,25 @@ import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const form = useRef ()
     useEffect(() =>{
-      setTimeout(() => {
-        setLetterClass('text-animate-hover')
-      }, 3000);
-  }, []);
-
-const sendEmail = (e) => {
+        setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 3000);
+    }, []);
+    const form = useRef ()
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+    const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs
-    .sendForm(
-        'service_o1dwxh8',
-        'template_455rwgs',
-        form.current,
-        'RxlfyKhoI3C2Wp3dL',
-    )
-    .then (
-        () => {
-            alert ('Message successfully sent!')
-            window.location.reload(false)
-        },
-        () => {
-            alert('Failed to send the message, please try again ')
-        }
-    )
+    emailjs.send("service_o1dwxh8","template_455rwgs",{
+        from_name: name,
+        from_email: email,
+        Subject: subject,
+        from_message: message,   
+        },'RxlfyKhoI3C2Wp3dL');
 }
 
     return (
@@ -53,16 +46,56 @@ const sendEmail = (e) => {
                             <form ref={form} onSubmit={sendEmail} >
                                 <ul>
                                     <li className='half'>
-                                        <input type="text" name="name" placeholder='Name' required />
+                                        {/* <input type="text" name="name" placeholder='Name' required /> */}
+                                        <input
+                                             type="text"
+                                              id="name"
+                                              name="name"
+                                              value={name}
+                                              placeholder="Name"
+                                              onChange={(event) =>
+                                                setName(event.target.value)
+                                              }
+                                            />
                                     </li>
                                     <li className='half'>
-                                        <input type="email" name="email" placeholder='Email' required />
+                                        {/* <input type="email" name="email" placeholder='Email' required /> */}
+                                        <input
+                                             type="text"
+                                              id="email"
+                                              name='email'
+                                              value={email}
+                                              placeholder="Email"
+                                              onChange={(event) =>
+                                                setEmail(event.target.value)
+                                              }
+                                            />
                                     </li> 
                                     <li>
-                                        <input placeholder="Subject" type="text" name="subject" required />
+                                    <input
+                                             type="text"
+                                              id="subject"
+                                              name='subject'
+                                              value={subject}
+                                              placeholder="Subject"
+                                              onChange={(event) =>
+                                                setSubject(event.target.value)
+                                              }
+                                            />
+                                        {/* <input placeholder="Subject" type="text" name="subject" required /> */}
                                     </li>
                                     <li>
-                                        <textarea placeholder="Message" name="message" required ></textarea>
+                                    <textarea
+                                             type="text"
+                                              id="message"
+                                              name='message'
+                                              value={message}
+                                              placeholder="Message"
+                                              onChange={(event) =>
+                                                setMessage(event.target.value)
+                                              }
+                                            />
+                                        {/* <textarea placeholder="Message" name="message" required ></textarea> */}
                                     </li>
                                     <li>
                                         <input type="submit" className='flat-button' value="SEND" />
