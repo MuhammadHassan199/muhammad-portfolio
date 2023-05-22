@@ -24,7 +24,17 @@ const Contact = () => {
         from_email: email,
         Subject: subject,
         from_message: message,   
-        },'RxlfyKhoI3C2Wp3dL');
+        },'RxlfyKhoI3C2Wp3dL')
+        .then(
+            () => {
+                alert('Message successfully sent!')
+                window.location.reload(false)
+            },
+            () => {
+                alert('Failed to Send the message!')
+            }
+            );
+        
 }
 
     return (
