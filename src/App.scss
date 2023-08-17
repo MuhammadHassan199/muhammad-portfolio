@@ -2,6 +2,10 @@ $max-width: 768px;
 $min-width: 1024px;
 $primary-color: #fd7171;
 
+$mobile-max-width: 768px;
+$desktop-min-width: 1024px;
+
+
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
 
@@ -26,12 +30,20 @@ $primary-color: #fd7171;
 }
 
 
-input,
-textarea {
-  font-family: 'Helvetica Neue';
-  
+@media (max-width: $mobile-max-width) {
+  input,
+  textarea {
+    font-family: 'Helvetica Neue';
+    /* Additional mobile-specific styling */
+  }
 }
-
+@media (min-width: $desktop-min-width) {
+  input,
+  textarea {
+    font-family: 'Helvetica Neue';
+    /* Additional desktop-specific styling */
+  }
+}
 
 
 
