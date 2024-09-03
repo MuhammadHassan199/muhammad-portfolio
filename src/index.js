@@ -10,8 +10,8 @@ import { BrowserRouter } from 'react-router-dom';
 const DownloadCV = ()=>{
   const handleDownload = () => {
       const link = document.createElement('a');
-      link.href ='./myresume.pdf'
-      link.download = 'myresume3.pdf';
+      link.href ='./muhammad_hassan_cv.pdf'
+      link.download = 'Muhammad Hassan CV';
       link.click();
   }
   return (

@@ -1,5 +1,5 @@
 import './index.scss'
-import LogoS from '../../../assets/images/logo-s.png';
+import LogoS from '../../../assets/images/potrait6.jpg';
 
 const Logo = () => {
     return (
